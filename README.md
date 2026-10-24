@@ -93,54 +93,6 @@ RouteWise uses a modern multi-tier microservices architecture:
 
 ---
 
-## 🚀 How to Open and Run in VS Code
-
-### Step 1: Open Folder in VS Code
-1. Open **VS Code**.
-2. Press `Ctrl + K, Ctrl + O` (or **File** → **Open Folder...**).
-3. Select this folder:
-   ```text
-   C:\Users\sriva\Documents\antigravity\quick-raman
-   ```
-
-### Step 2: Set up MySQL Database
-Open a terminal in VS Code and run:
-```cmd
-"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p < database\schema.sql
-"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p < database\seed_data.sql
-```
-*(Or simply double-click `database\setup_mysql.bat`)*
-
-### Step 3: Run the Services
-
-You can run everything with the one-click launcher:
-```cmd
-run_all.bat
-```
-
-Or run each service individually in separate VS Code terminals:
-
-* **Terminal 1 (Java 21 Backend)**:
-  ```cmd
-  cd backend-java
-  run_java_backend.bat
-  ```
-  *(Server runs on `http://localhost:8080`)*
-
-* **Terminal 2 (Python 3.11 Microservice)**:
-  ```cmd
-  cd backend-python
-  run_python_backend.bat
-  ```
-  *(Microservice runs on `http://localhost:5000`)*
-
-* **Terminal 3 (Web UI Dashboard)**:
-  ```cmd
-  cmd /c npm run dev
-  ```
-  *(Open `http://localhost:5173` in your browser)*
-
----
 
 ## 📂 Project Directory Structure
 
